@@ -719,29 +719,26 @@ img {
 /* Stat — bold factual anchor, no italics */
 .grid-box__stat {
   font-family: 'Lora', serif;
-  font-size: 24px;
+  font-size: 22px;
   font-style: normal;
   font-weight: 700;
   color: var(--cream);
   line-height: 1.2;
-  margin-bottom: 10px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  margin-bottom: 12px;
 }
 
 .grid-box--feature .grid-box__stat {
-  font-size: 30px;
+  font-size: 26px;
 }
 
 /* Headline — italic creative voice, secondary */
 .grid-box__headline {
   font-family: 'Lora', serif;
-  font-size: 13px;
+  font-size: 17px;
   font-style: italic;
   font-weight: 400;
   color: rgba(245, 240, 232, 0.5);
-  line-height: 1.5;
+  line-height: 1.4;
   transition: color 0.2s ease;
 }
 
