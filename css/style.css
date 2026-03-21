@@ -716,24 +716,29 @@ img {
   margin-bottom: 12px;
 }
 
-/* Stat — the visual hero, large and prominent */
+/* Stat — bold factual anchor, no italics */
 .grid-box__stat {
   font-family: 'Lora', serif;
-  font-size: 22px;
-  font-style: italic;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
   color: var(--cream);
   line-height: 1.2;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .grid-box--feature .grid-box__stat {
-  font-size: 28px;
+  font-size: 30px;
 }
 
-/* Headline — secondary, smaller, faded */
+/* Headline — italic creative voice, secondary */
 .grid-box__headline {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 12px;
+  font-family: 'Lora', serif;
+  font-size: 13px;
+  font-style: italic;
   font-weight: 400;
   color: rgba(245, 240, 232, 0.5);
   line-height: 1.5;
@@ -1089,7 +1094,7 @@ img {
    ============================================================ */
 
 /* Walmart+ — show full figure, arm raised at top */
-.walmart-hero .client-hero__image { object-position: center 15%; }
+.walmart-hero .client-hero__image { object-position: center 5%; }
 
 /* Right Brain — bobblehead centered, pull up slightly */
 .rightbrain-hero .client-hero__image { object-position: center 30%; }

@@ -5,7 +5,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   // ── NAV: switch between dark/light based on scroll position ──
-  const nav = document.querySelector('.nav');
+  const nav = document.getElementById('main-nav') || document.querySelector('.nav');
   const hero = document.querySelector('.home-hero, .client-hero, .about-hero, .contact-hero');
 
   if (nav && hero) {
