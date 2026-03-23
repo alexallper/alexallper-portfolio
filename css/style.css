@@ -273,6 +273,20 @@ img {
   color: var(--black);
 }
 
+.bottom-line__prev {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--green);
+  white-space: nowrap;
+  transition: color 0.2s ease;
+}
+
+.bottom-line__prev:hover {
+  color: var(--black);
+}
+
 /* ============================================================
    CLIENT PAGE — SHARED
    ============================================================ */
