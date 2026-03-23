@@ -260,6 +260,7 @@ img {
 }
 
 .bottom-line__next {
+  font-family: 'DM Sans', sans-serif;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.15em;
@@ -267,6 +268,7 @@ img {
   color: var(--green);
   white-space: nowrap;
   transition: color 0.2s ease;
+  text-decoration: none;
 }
 
 .bottom-line__next:hover {
@@ -274,6 +276,7 @@ img {
 }
 
 .bottom-line__prev {
+  font-family: 'DM Sans', sans-serif;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.15em;
@@ -281,6 +284,7 @@ img {
   color: var(--green);
   white-space: nowrap;
   transition: color 0.2s ease;
+  text-decoration: none;
 }
 
 .bottom-line__prev:hover {
