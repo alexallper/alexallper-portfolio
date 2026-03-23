@@ -1170,9 +1170,4 @@ img {
   opacity: 1;
 }
 
-/* PULL QUOTE — single line */
-.pull-quote p {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
+
