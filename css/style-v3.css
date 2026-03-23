@@ -1159,3 +1159,20 @@ img {
 /* LA Angels — stadium sign in upper half, anchor to top */
 .laangels-hero .client-hero__image { object-position: center top; }
 /* v20260321054903 */
+
+
+/* PRESS IMAGES — show full screenshot without cropping */
+.work-item__image--press {
+  aspect-ratio: unset;
+  height: auto;
+  object-fit: contain;
+  background: var(--cream);
+  opacity: 1;
+}
+
+/* PULL QUOTE — single line */
+.pull-quote p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
