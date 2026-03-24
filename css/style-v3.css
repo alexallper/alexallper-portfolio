@@ -1165,12 +1165,18 @@ img {
 /* PRESS IMAGES — natural dimensions, no cropping */
 .work-item__image--press {
   width: 100%;
+  max-width: 100%;
   height: auto;
   aspect-ratio: unset;
   object-fit: unset;
   object-position: unset;
   opacity: 1;
   display: block;
+}
+
+.work-item--full .work-item__image--press {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .work-item:has(.work-item__image--press) {
