@@ -1177,6 +1177,10 @@ img {
 .work-item--full .work-item__image--press {
   max-width: 100%;
   margin: 0 auto;
+  aspect-ratio: unset !important;
+  object-fit: unset !important;
+  height: auto !important;
+  width: 100% !important;
 }
 
 .work-item:has(.work-item__image--press) {
