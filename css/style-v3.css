@@ -1190,3 +1190,27 @@ img {
 }
 
 
+
+
+/* MORE WINS — 1-up editorial layout */
+.mw-editorial {
+  padding: 40px 80px 0;
+  max-width: 860px;
+}
+
+.mw-headline {
+  font-family: 'Lora', serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--black);
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.mw-copy {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+  color: var(--gray);
+  line-height: 1.7;
+}
