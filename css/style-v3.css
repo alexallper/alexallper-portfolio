@@ -606,11 +606,12 @@ img {
 
 .pull-quote p {
   font-family: 'Lora', serif;
-  font-size: 28px;
   font-style: italic;
+  font-size: 28px;
   color: var(--black);
-  line-height: 1.4;
-  max-width: 700px;
+  line-height: 1.6;
+  font-weight: 400;
+  text-align: center;
 }
 
 /* INSIGHT BLOCK */
