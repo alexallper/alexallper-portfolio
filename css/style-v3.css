@@ -1175,7 +1175,7 @@ img {
 }
 
 .work-item--full .work-item__image--press {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
