@@ -1165,10 +1165,14 @@ img {
 /* PRESS IMAGES — show full screenshot without cropping */
 .work-item__image--press {
   aspect-ratio: unset;
+  width: 100%;
   height: auto;
   object-fit: contain;
   background: var(--cream);
   opacity: 1;
+  display: block;
+  border: 1px solid rgba(138, 132, 120, 0.4);
+  box-sizing: border-box;
 }
 
 
