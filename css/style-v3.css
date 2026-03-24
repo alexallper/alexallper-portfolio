@@ -1162,17 +1162,15 @@ img {
 /* v20260321054903 */
 
 
-/* PRESS IMAGES — show full screenshot without cropping */
+/* PRESS IMAGES — show full without any cropping or gaps */
 .work-item__image--press {
-  aspect-ratio: unset;
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  background: var(--cream);
+  aspect-ratio: unset !important;
+  width: 100% !important;
+  height: auto !important;
+  object-fit: unset !important;
   opacity: 1;
   display: block;
   border: 1px solid rgba(138, 132, 120, 0.4);
-  box-sizing: border-box;
 }
 
 
