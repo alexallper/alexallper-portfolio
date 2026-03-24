@@ -1162,21 +1162,22 @@ img {
 /* v20260321054903 */
 
 
-/* PRESS IMAGES — show full without any cropping or gaps */
+/* PRESS IMAGES — natural dimensions, no cropping */
 .work-item__image--press {
-  aspect-ratio: unset !important;
-  width: 100% !important;
-  height: auto !important;
-  object-fit: unset !important;
+  width: 100%;
+  height: auto;
+  aspect-ratio: unset;
+  object-fit: unset;
+  object-position: unset;
   opacity: 1;
   display: block;
-  border: 1px solid rgba(138, 132, 120, 0.4);
 }
 
-
-
-
-/* Work items with press images — cream background to eliminate edge bleed */
 .work-item:has(.work-item__image--press) {
   background: var(--cream);
+  overflow: visible;
+  height: auto;
+  outline: 1px solid rgba(138, 132, 120, 0.4);
 }
+
+
