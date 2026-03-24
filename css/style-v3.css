@@ -1177,7 +1177,6 @@ img {
   background: var(--cream);
   overflow: visible;
   height: auto;
-  outline: 1px solid rgba(138, 132, 120, 0.4);
 }
 
 
