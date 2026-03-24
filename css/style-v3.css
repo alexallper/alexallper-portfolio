@@ -1176,3 +1176,9 @@ img {
 }
 
 
+
+
+/* Work items with press images — cream background to eliminate edge bleed */
+.work-item:has(.work-item__image--press) {
+  background: var(--cream);
+}
