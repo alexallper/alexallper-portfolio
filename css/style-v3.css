@@ -1485,3 +1485,25 @@ img {
     width: 100%;
   }
 }
+
+@media (max-width: 768px) {
+  .bottom-line {
+    flex-wrap: wrap;
+  }
+  .bottom-line__prev {
+    order: 1;
+    flex: 0 0 auto;
+  }
+  .bottom-line__next {
+    order: 2;
+    flex: 0 0 auto;
+    margin-left: auto;
+  }
+  .bottom-line__text {
+    order: 3;
+    width: 100%;
+    flex: 0 0 100%;
+    text-align: center !important;
+    margin-top: 8px;
+  }
+}
