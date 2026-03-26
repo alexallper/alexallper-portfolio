@@ -1452,58 +1452,96 @@ img {
   color: var(--green);
 }
 
-/* FOOTER MOBILE */
+/* ============================================================
+   MOBILE — max-width 768px
+   ============================================================ */
 @media (max-width: 768px) {
-  .site-footer {
-    flex-direction: column;
-    gap: 16px;
-    padding: 32px 24px;
-    text-align: center;
-  }
-}
 
-@media (max-width: 768px) {
-  div[style*="display:flex"][style*="gap"] {
+  /* NAV */
+  .nav { padding: 0 24px; }
+  .nav__links { gap: 20px; }
+  .nav__links a { font-size: 10px; }
+  .nav__logo-img { height: 32px; }
+
+  /* HOME HERO */
+  .home-hero { padding: calc(var(--nav-height) + 32px) 24px 48px; min-height: 60vh; }
+  .home-hero__title { font-size: clamp(52px, 14vw, 80px); }
+  .home-hero__subhead { font-size: 20px; }
+
+  /* HOME GRID */
+  .home-grid { grid-template-columns: 1fr; }
+  .grid-box--full { min-height: 320px; }
+  .grid-box { min-height: 260px; padding: 24px; }
+  .grid-box__client { font-size: 14px; }
+  .grid-box__stat { font-size: 18px; }
+  .grid-box__headline { font-size: 14px; }
+
+  /* CLIENT HERO */
+  .client-hero { height: 50vh; min-height: 320px; }
+  .client-hero__content { bottom: 32px; left: 24px; right: 24px; }
+  .client-hero__stat { font-size: 16px; }
+  .client-hero__headline { font-size: 32px; }
+
+  /* CLIENT OPENING */
+  .client-opening { padding: 40px 24px 32px; }
+  .client-opening p { font-size: 17px; }
+
+  /* WORK SECTIONS */
+  .work-section { padding: 40px 24px 48px; }
+  .work-section::before { margin: 0 -24px 40px -24px; }
+  .work-label { font-size: 26px; margin-bottom: 24px; }
+
+  /* WORK GRIDS */
+  .work-grid--2,
+  .work-grid--3,
+  .work-grid--4,
+  .work-grid--video { grid-template-columns: 1fr; }
+  .work-item--vimeo-wide { grid-column: 1; }
+
+  /* 9:16 PORTRAIT VIDEO ROWS */
+  div[style*="display:flex"] {
     flex-direction: column;
     align-items: center;
   }
-  .work-item.work-item--vimeo[style*="width:360px"] {
+  .work-item--vimeo[style*="width:360px"] {
     width: 100% !important;
   }
-}
 
-@media (max-width: 768px) {
-  .bottom-line__next {
-    order: 2;
-    margin-left: auto;
-  }
-  .bottom-line__prev {
-    order: 1;
-  }
-  .bottom-line__text {
-    order: 3;
-    width: 100%;
-  }
-}
+  /* CALLOUT */
+  .callout { padding: 32px 24px; margin: 0 0 48px; }
+  .callout p { font-size: 24px; }
 
-@media (max-width: 768px) {
-  .bottom-line {
-    flex-wrap: wrap;
-  }
-  .bottom-line__prev {
-    order: 1;
-    flex: 0 0 auto;
-  }
-  .bottom-line__next {
-    order: 2;
-    flex: 0 0 auto;
-    margin-left: auto;
-  }
-  .bottom-line__text {
-    order: 3;
-    width: 100%;
-    flex: 0 0 100%;
-    text-align: center !important;
-    margin-top: 8px;
-  }
+  /* RESULTS BAR */
+  .results-bar { flex-direction: column; padding: 40px 24px; align-items: center; gap: 32px; }
+  .results-bar__item { border-right: none; border-left: none !important; border-bottom: 1px solid rgba(45, 106, 79, 0.2); padding: 0 0 32px 0; width: 100%; }
+  .results-bar__item:last-child { border-bottom: none; padding-bottom: 0; }
+  .results-bar__number { font-size: 48px; }
+
+  /* PULL QUOTE */
+  .pull-quote { padding: 40px 24px; }
+  .pull-quote p { font-size: 22px; }
+
+  /* BOTTOM LINE */
+  .bottom-line { padding: 32px 24px; flex-wrap: wrap; gap: 16px; }
+  .bottom-line__prev { order: 1; flex: 0 0 auto; }
+  .bottom-line__next { order: 2; flex: 0 0 auto; margin-left: auto; }
+  .bottom-line__text { order: 3; flex: 0 0 100%; width: 100%; font-size: 15px; text-align: center !important; margin-top: 8px; }
+
+  /* MORE WINS */
+  .mw-editorial { padding: 24px 24px 0; }
+  .mw-headline { font-size: 24px; }
+
+  /* ABOUT */
+  .about-hero { padding: calc(var(--nav-height) + 40px) 24px 48px; }
+  .about-hero__title { font-size: clamp(48px, 12vw, 80px); }
+  .about-content { grid-template-columns: 1fr; gap: 40px; padding: 40px 24px; }
+  .about-image { position: static; }
+
+  /* CONTACT */
+  .contact-hero { padding: calc(var(--nav-height) + 40px) 24px 48px; }
+  .contact-hero__title { font-size: clamp(32px, 10vw, 60px); }
+
+  /* FOOTER */
+  .site-footer { flex-direction: column; gap: 16px; padding: 32px 24px; text-align: center; }
+
 }
