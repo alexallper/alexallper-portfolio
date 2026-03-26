@@ -1418,3 +1418,46 @@ img {
   }
 
 }
+
+/* FOOTER */
+.site-footer {
+  padding: 32px 60px;
+  border-top: 1px solid rgba(45, 106, 79, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--cream);
+}
+.site-footer__logo {
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-size: 17px;
+  color: var(--gray);
+}
+.site-footer__copy {
+  font-size: 11px;
+  color: rgba(138, 132, 120, 0.5);
+  font-weight: 300;
+}
+.site-footer__links {
+  display: flex;
+  gap: 24px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gray);
+}
+.site-footer__links a:hover {
+  color: var(--green);
+}
+
+/* FOOTER MOBILE */
+@media (max-width: 768px) {
+  .site-footer {
+    flex-direction: column;
+    gap: 16px;
+    padding: 32px 24px;
+    text-align: center;
+  }
+}
