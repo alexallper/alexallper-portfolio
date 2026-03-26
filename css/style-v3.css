@@ -1461,3 +1461,13 @@ img {
     text-align: center;
   }
 }
+
+@media (max-width: 768px) {
+  div[style*="display:flex"][style*="gap"] {
+    flex-direction: column;
+    align-items: center;
+  }
+  .work-item.work-item--vimeo[style*="width:360px"] {
+    width: 100% !important;
+  }
+}
