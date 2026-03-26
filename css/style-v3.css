@@ -1471,3 +1471,17 @@ img {
     width: 100% !important;
   }
 }
+
+@media (max-width: 768px) {
+  .bottom-line__next {
+    order: 2;
+    margin-left: auto;
+  }
+  .bottom-line__prev {
+    order: 1;
+  }
+  .bottom-line__text {
+    order: 3;
+    width: 100%;
+  }
+}
